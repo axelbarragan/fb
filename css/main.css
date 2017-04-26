@@ -48,6 +48,7 @@ of those sections to manage the look and feel of the site. */
   text-align: center;
   background-image: url('../assets/img/cover.jpg');
   background-size: cover;
+  background-position: center;
   color: #FFF;
 }
 .intro  h1 {
