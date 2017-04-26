@@ -1,0 +1,195 @@
+/*main.css*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+.navbar-inner {
+  background:transparent !important;
+}
+
+.texto-centro {
+  text-align: center;
+}
+.texto-derecha {
+  text-align: right;
+}
+
+@media(min-width:767px) {
+  .navbar {
+    padding: 10px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+.intro  h1 {
+  font-size: 80px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.nosotros {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background: #eee;
+}
+
+.services-section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background: #fff;
+}
+
+.contact-section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background: #eee;
+}
+footer {
+  width: 100%;
+  color: white;
+}
+footer .f1 {
+  background-color: #333;
+  width: 100%;
+  height: 100px;
+  padding-top: 35px;
+}
+footer .f1 .fa {
+  color: white;
+}
+footer .f2 {
+  background-color: #222;
+  height: 50px;
+}
+footer .f2 p {
+  padding-top: 15px;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba( 4, 100, 160,0.9); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4); 
+}
+
+/*NAVBAR-TRANSPARENTE*/
+.navbar-flubox-transparente .navbar-brand {
+    color: rgba(0, 0, 0, 1);
+}
+.navbar-flubox-transparente {
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom-width: 0px;
+}
+.navbar-flubox-transparente .navbar-nav>li>a {
+    color: rgba(3, 3, 3, 1);
+    background-color: rgba(255, 255, 255, 0);
+}
+.navbar-flubox-transparente .navbar-nav>li>a:hover,
+.navbar-flubox-transparente .navbar-nav>li>a:focus {
+    color: rgba(145, 145, 145, 1);
+    background-color: rgba(255, 255, 255, 0);
+}
+.navbar-flubox-transparente .navbar-nav>.active>a,
+.navbar-flubox-transparente .navbar-nav>.active>a:hover,
+.navbar-flubox-transparente .navbar-nav>.active>a:focus {
+    color: rgba(153, 153, 153, 1);
+    background-color: rgba(255, 255, 255, 0);
+}
+.navbar-flubox-transparente .navbar-toggle {
+    border-color: #ffffff;
+}
+.navbar-flubox-transparente .navbar-toggle:hover,
+.navbar-flubox-transparente .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+.navbar-flubox-transparente .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.navbar-flubox-transparente .navbar-toggle:hover .icon-bar,
+.navbar-flubox-transparente .navbar-toggle:focus .icon-bar {
+    background-color: #ffffff;
+}
+
+/*-----*/
+.navbar-flubox .navbar-brand {
+    color: rgba(0, 0, 0, 1);
+}
+.navbar-flubox {
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 2px;
+}
+.navbar-flubox .navbar-nav>li>a {
+    color: rgba(125, 125, 125, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+.navbar-flubox .navbar-nav>li>a:hover,
+.navbar-flubox .navbar-nav>li>a:focus {
+    color: rgba(163, 163, 163, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+.navbar-flubox .navbar-nav>.active>a,
+.navbar-flubox .navbar-nav>.active>a:hover,
+.navbar-flubox .navbar-nav>.active>a:focus {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+.navbar-flubox .navbar-toggle {
+    border-color: #ffffff;
+}
+.navbar-flubox .navbar-toggle:hover,
+.navbar-flubox .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+.navbar-flubox .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.navbar-flubox .navbar-toggle:hover .icon-bar,
+.navbar-flubox .navbar-toggle:focus .icon-bar {
+    background-color: #ffffff;
+}
