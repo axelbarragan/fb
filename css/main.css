@@ -46,10 +46,15 @@ of those sections to manage the look and feel of the site. */
   height: 100%;
   padding-top: 150px;
   text-align: center;
+  background-image: url(../assets/img/cover.jpg);
+  background-size: cover;
+  color: #FFF;
 }
 .intro  h1 {
+  padding-top: 100px;
   font-size: 80px;
   font-family: 'Orbitron', sans-serif;
+  padding-bottom: -10px;
 }
 
 .nosotros {
@@ -118,7 +123,7 @@ footer .f2 p {
 
 /*NAVBAR-TRANSPARENTE*/
 .navbar-flubox-transparente .navbar-brand {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
 }
 .navbar-flubox-transparente {
     font-size: 16px;
@@ -126,12 +131,12 @@ footer .f2 p {
     border-bottom-width: 0px;
 }
 .navbar-flubox-transparente .navbar-nav>li>a {
-    color: rgba(3, 3, 3, 1);
+    color: rgba(255, 255, 255, 1);
     background-color: rgba(255, 255, 255, 0);
 }
 .navbar-flubox-transparente .navbar-nav>li>a:hover,
 .navbar-flubox-transparente .navbar-nav>li>a:focus {
-    color: rgba(145, 145, 145, 1);
+    color: rgba(220, 220, 220, 1);
     background-color: rgba(255, 255, 255, 0);
 }
 .navbar-flubox-transparente .navbar-nav>.active>a,
