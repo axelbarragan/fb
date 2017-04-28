@@ -31,7 +31,7 @@
           <a class="navbar-brand page-scroll" href="#page-top">Flubox</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right">
             <li class="hidden">
               <a class="page-scroll" href="#page-top"></a>
             </li>
@@ -39,10 +39,16 @@
               <a class="page-scroll" href="#nosotros">Nosotros</a>
             </li>
             <li>
-              <a class="page-scroll" href="#services">¿Qué hacemos?</a>
+              <a class="page-scroll" href="#sitios-web">Sitios web</a>
             </li>
             <li>
-              <a class="page-scroll" href="#contact">Contacto</a>
+              <a class="page-scroll" href="#identidad">Identidad corporativa</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#publicidad">Publicidad</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact">Contáctanos</a>
             </li>
           </ul>
         </div>
@@ -53,7 +59,7 @@
         <div class="row">
           <div class="col-lg-12">
             <h1>Let's rock!</h1>
-            <h3>Tu imaginas, nosotros lo hacemos por ti</h3>
+            <h3>Imagina <span class="element"></span></h3>
           </div>
         </div>
       </div>
@@ -67,7 +73,25 @@
         </div>
       </div>
     </section>
-    <section id="services" class="services-section">
+    <section id="sitios-web" class="services-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Services Section</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="identidad" class="services-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Services Section</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="publicidad" class="services-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -81,6 +105,39 @@
         <div class="row">
           <div class="col-lg-12">
             <h1>Contact Section</h1>
+          </div>
+          <div class="col-lg-12 texto-izquierda">
+            <div class="col-lg-6 line">
+              <form>
+                <div class="form-group">
+                  <label for="nombre">Tu nombre</label>
+                  <input type="text" class="form-control" name="nombre" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="correo">Tu correo</label>
+                  <input type="text" class="form-control" name="correo" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Tu teléfono</label>
+                  <input type="text" class="form-control" name="telefono" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Tu mensaje</label>
+                  <textarea name="mensaje" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6">
+              <label>Dirección</label>
+              <p>Local X, Plaza Centro, San Juan Teotihuacán, Estado de México.</p>
+              <label>Correo</label>
+              <p><a href="mailto:contacto@flubox.com">contacto@flubox.com</a></p>
+              <label>Teléfono</label>
+              <p><a href="tel:5518737118">5518737118</a></p>
+            </div>
           </div>
         </div>
       </div>
@@ -107,5 +164,18 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(function(){
+          $(".element").typed({
+            strings: ["tu sitio web.", "la identidad corporativa.","la publicidad que necesitas."],
+            loop: true,
+            typeSpeed: 80,
+            backSpeed: 0,
+          });
+        });
+      });
+    </script>
   </body>
   </html>

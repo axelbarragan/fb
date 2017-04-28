@@ -24,6 +24,9 @@ html {
 .texto-derecha {
   text-align: right;
 }
+.texto-izquierda {
+  text-align: left;
+}
 
 @media(min-width:767px) {
   .navbar {
@@ -50,12 +53,16 @@ of those sections to manage the look and feel of the site. */
   background-size: cover;
   background-position: center;
   color: #FFF;
+
 }
 .intro  h1 {
   padding-top: 100px;
   font-size: 80px;
   font-family: 'Orbitron', sans-serif;
   padding-bottom: -10px;
+  -webkit-text-fill-color: #FFF;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1.95px;  
 }
 
 .nosotros {
@@ -73,8 +80,10 @@ of those sections to manage the look and feel of the site. */
 }
 
 .contact-section {
-  height: 100%;
-  padding-top: 150px;
+  height: auto;
+  width: 100%;
+  padding-top: 110px;
+  padding-bottom: 100px;
   text-align: center;
   background: #eee;
 }
@@ -163,7 +172,7 @@ footer .f2 p {
 
 /*-----*/
 .navbar-flubox .navbar-brand {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(4, 100, 160, 1);
 }
 .navbar-flubox {
     font-size: 16px;
@@ -176,7 +185,7 @@ footer .f2 p {
 }
 .navbar-flubox .navbar-nav>li>a:hover,
 .navbar-flubox .navbar-nav>li>a:focus {
-    color: rgba(163, 163, 163, 1);
+    color: rgba(4, 100, 160, 1);
     background-color: rgba(255, 255, 255, 1);
 }
 .navbar-flubox .navbar-nav>.active>a,
@@ -198,4 +207,37 @@ footer .f2 p {
 .navbar-flubox .navbar-toggle:hover .icon-bar,
 .navbar-flubox .navbar-toggle:focus .icon-bar {
     background-color: #ffffff;
+}
+
+/*CURSOR*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}
+
+/**/
+.line {
+  border-right: 1px solid #B29999;
 }
