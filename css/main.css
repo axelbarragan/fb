@@ -88,13 +88,12 @@ of those sections to manage the look and feel of the site. */
   background: #eee;
 }
 footer {
-  width: 100%;
+  width: 100%;  
   color: white;
 }
 footer .f1 {
   background-color: #333;
-  width: 100%;
-  height: 100px;
+  height: 140px;
   padding-top: 35px;
 }
 footer .f1 .fa {
@@ -133,111 +132,115 @@ footer .f2 p {
 
 /*NAVBAR-TRANSPARENTE*/
 .navbar-flubox-transparente .navbar-brand {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 .navbar-flubox-transparente {
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 0);
-    border-bottom-width: 0px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom-width: 0px;
 }
 .navbar-flubox-transparente .navbar-nav>li>a {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
 }
 .navbar-flubox-transparente .navbar-nav>li>a:hover,
 .navbar-flubox-transparente .navbar-nav>li>a:focus {
-    color: rgba(220, 220, 220, 1);
-    background-color: rgba(255, 255, 255, 0);
+  color: rgba(220, 220, 220, 1);
+  background-color: rgba(255, 255, 255, 0);
 }
 .navbar-flubox-transparente .navbar-nav>.active>a,
 .navbar-flubox-transparente .navbar-nav>.active>a:hover,
 .navbar-flubox-transparente .navbar-nav>.active>a:focus {
-    color: rgba(153, 153, 153, 1);
-    background-color: rgba(255, 255, 255, 0);
+  color: rgba(153, 153, 153, 1);
+  background-color: rgba(255, 255, 255, 0);
 }
 .navbar-flubox-transparente .navbar-toggle {
-    border-color: #ffffff;
+  border-color: #ffffff;
 }
 .navbar-flubox-transparente .navbar-toggle:hover,
 .navbar-flubox-transparente .navbar-toggle:focus {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 .navbar-flubox-transparente .navbar-toggle .icon-bar {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 .navbar-flubox-transparente .navbar-toggle:hover .icon-bar,
 .navbar-flubox-transparente .navbar-toggle:focus .icon-bar {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 /*-----*/
 .navbar-flubox .navbar-brand {
-    color: rgba(4, 100, 160, 1);
+  color: rgba(4, 100, 160, 1);
 }
 .navbar-flubox {
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 1);
-    border-bottom-width: 2px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom-width: 2px;
 }
 .navbar-flubox .navbar-nav>li>a {
-    color: rgba(125, 125, 125, 1);
-    background-color: rgba(255, 255, 255, 1);
+  color: rgba(125, 125, 125, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 .navbar-flubox .navbar-nav>li>a:hover,
 .navbar-flubox .navbar-nav>li>a:focus {
-    color: rgba(4, 100, 160, 1);
-    background-color: rgba(255, 255, 255, 1);
+  color: rgba(4, 100, 160, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 .navbar-flubox .navbar-nav>.active>a,
 .navbar-flubox .navbar-nav>.active>a:hover,
 .navbar-flubox .navbar-nav>.active>a:focus {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 .navbar-flubox .navbar-toggle {
-    border-color: #ffffff;
+  border-color: #ffffff;
 }
 .navbar-flubox .navbar-toggle:hover,
 .navbar-flubox .navbar-toggle:focus {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 .navbar-flubox .navbar-toggle .icon-bar {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 .navbar-flubox .navbar-toggle:hover .icon-bar,
 .navbar-flubox .navbar-toggle:focus .icon-bar {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 /*CURSOR*/
 .typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 @keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 @-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 @-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 .typed-fade-out{
-    opacity: 0;
-    animation: 0;
-    transition: opacity .25s;
+  opacity: 0;
+  animation: 0;
+  transition: opacity .25s;
 }
 
 /**/
 .line {
   border-right: 1px solid #B29999;
+}
+
+.pad-derecha-5 {
+  padding-right: 5px; 
 }
