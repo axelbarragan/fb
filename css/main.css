@@ -78,16 +78,16 @@ of those sections to manage the look and feel of the site. */
 
 .sitios {
   text-align: center;
-  background-color: rgba(180,255,0,0.4);
+  background-color: rgba(180,255,0,0.5);
 }
 .publicidad {
   text-align: center;
   /*background: #fff;*/
-  background-color: rgba(0,255,220,0.4)
+  background-color: rgba(160,64,4,0.5);
 }
 .camaras {
   text-align: center;
-  background-color: rgba(180,0,255,0.4);
+  background-color: rgba(180,0,255,0.5);
 }
 
 .contact-section {
