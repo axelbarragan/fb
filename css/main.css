@@ -17,6 +17,9 @@ html {
 .navbar-inner {
   background:transparent !important;
 }
+.img-logo {
+  width: 70px;
+}
 
 .texto-centro {
   text-align: center;
@@ -76,6 +79,16 @@ of those sections to manage the look and feel of the site. */
   background: #eee;
 }
 
+.parallax-window {
+  min-height: 300px;
+  background: transparent;
+  z-index: 1000;
+}
+.wrapper-parallax {
+  padding: 140px 0px;
+  text-align: center;
+}
+
 .sitios {
   text-align: center;
   background-color: rgba(100,160,4,0.4);
@@ -83,11 +96,12 @@ of those sections to manage the look and feel of the site. */
 .publicidad {
   text-align: center;
   /*background: #fff;*/
-  background-color: rgba(4,100,160,0.5);
+  background-color: rgba(160,4,100,0.5);
 }
 .camaras {
   text-align: center;
-  background-color: rgba(160,4,100,0.5);
+  background-color: rgba(4,100,160,0.5);
+  
 }
 
 .contact-section {
@@ -266,25 +280,11 @@ footer .f2 p {
   padding-top: 15px;
 }
 
-/*!
- * pricing.css (https://github.com/abhimaliyeckal)
- * Version: 1.0
- * Author: Abhishek Raj 
- * Linkedin URL: https://in.linkedin.com/in/abhimaliyeckal
- * Github: https://github.com/abhimaliyeckal
-
- * Made available under a MIT License:
- * http://www.opensource.org/licenses/mit-license.php
-
- * pricing.css Copyright Abhishek Raj 2014.
- */
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300); 
+/**/
 .price_table_container{
   text-align:center;
   color:#666;
   margin-top:35px;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .price_table_heading{
@@ -295,7 +295,7 @@ footer .f2 p {
 
 
 .price_table_row {
-    padding:15px;
+  padding:15px;
   background: #FFF;
 }
 
@@ -308,22 +308,21 @@ footer .f2 p {
 }
 
 .price_table_row:nth-of-type(even) {
-    background: #F8F8F8;
+  background: #F8F8F8;
 }
 .btn{
   border-radius:0px;
 }
 
 .recommended{
-/*USER DEFINED COLOUR*/ 
-background:#FF3A3A; 
-color:#FFF;
-/*USER DEFINED COLOUR*/ 
-padding:4px 0 4px 0;
-margin-top:10px;  
-text-align:center;
-margin-bottom:-35px;
-font-family: 'Open Sans', sans-serif;
+  /*USER DEFINED COLOUR*/ 
+  background:#FF3A3A; 
+  color:#FFF;
+  /*USER DEFINED COLOUR*/ 
+  padding:4px 0 4px 0;
+  margin-top:10px;  
+  text-align:center;
+  margin-bottom:-35px;
 }
 
 
