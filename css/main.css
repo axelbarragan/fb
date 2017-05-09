@@ -105,13 +105,13 @@ of those sections to manage the look and feel of the site. */
   margin-left: 50px;
 }
 i.verde {
-  color: rgba(100,160,4,1);
+  color: #64a004;
 }
 i.morado {
-  color: rgba(100,4,160,1);
+  color: #a00464;
 }
 i.azul {
-  color: rgba(4,100,160,1);
+  color: #0464a0;
 }
 
 .parallax-window {
