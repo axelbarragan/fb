@@ -78,6 +78,9 @@ of those sections to manage the look and feel of the site. */
   text-align: center;
   background: #eee;
 }
+.img-nosotros {
+  width: 100px;
+}
 
 .servicios {
   text-align: center;
@@ -100,6 +103,15 @@ of those sections to manage the look and feel of the site. */
 .ser-recom .texto {
   text-align: middle;
   margin-left: 50px;
+}
+i.verde {
+  color: rgba(100,160,4,1);
+}
+i.morado {
+  color: rgba(100,4,160,1);
+}
+i.azul {
+  color: rgba(4,100,160,1);
 }
 
 .parallax-window {
@@ -448,99 +460,240 @@ footer .f2 p {
 /* --- Plans ---------------------------- */
 
 .my_planHeader {
-    text-align: center;
-    color: white;
-    padding-top:0.2em;
-    padding-bottom:0.2em;
+  text-align: center;
+  color: white;
+  padding-top:0.2em;
+  padding-bottom:0.2em;
 }
 .my_planTitle {
-    font-size:2em;
-    font-weight: bold;
+  font-size:2em;
+  font-weight: bold;
 }
 .my_planPrice {
-    font-size:1.4em;
-    font-weight: bold;    
+  font-size:1.4em;
+  font-weight: bold;    
 }
 .my_planDuration {
-    margin-top: -0.6em;
+  margin-top: -0.6em;
 }
 
 @media (max-width: 768px) {
-    .my_planTitle {
-        font-size:small;
-    }    
+  .my_planTitle {
+    font-size:small;
+  }    
 }
 
 /* --- Features ------------------------- */
 
 .my_feature {
-    line-height:2.8em;   
+  line-height:2.8em;   
 }
 
 @media (max-width: 768px) {
-    .my_feature {
-        text-align: center
-    }
- }
+  .my_feature {
+    text-align: center
+  }
+}
 
 .my_featureRow {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }    
 
 /* --- Plan 1 --------------------------- */
 .my_plan1 {
-    background: rgb(224,234,242);
+  background: rgb(224,234,242);
 }
 
 .my_planHeader.my_plan1 a {
-    background: rgb(72, 109, 139);
-    color:white;
+  background: rgb(72, 109, 139);
+  color:white;
 }
 
 .my_planHeader.my_plan1 {
-    background: rgb(105, 153, 193);
-    border-bottom: thick solid rgb(72, 109, 139);
+  background: rgb(105, 153, 193);
+  border-bottom: thick solid rgb(72, 109, 139);
 }
 
 /* --- Plan 2 --------------------------- */
 .my_plan2 {
-    background: rgb(230,235,218);
+  background: rgb(230,235,218);
 }
 
 .my_planHeader.my_plan2 a {
-    background: rgb(108, 131, 62);
-    color:white;
+  background: rgb(108, 131, 62);
+  color:white;
 }
 
 .my_planHeader.my_plan2 {
-    background: rgb(134, 162, 77);
-    border-bottom: thick solid rgb(108, 131, 62);
+  background: rgb(134, 162, 77);
+  border-bottom: thick solid rgb(108, 131, 62);
 }
 
 /* --- Plan 3 --------------------------- */
 .my_plan3 {
-    background: rgb(254,235,212);
+  background: rgb(254,235,212);
 }
 
 .my_planHeader.my_plan3 a {
-    background: rgb(199, 127, 40);
-    color:white;
+  background: rgb(199, 127, 40);
+  color:white;
 }
 
 .my_planHeader.my_plan3 {
-    background: rgb(253, 161, 49);
-    border-bottom: thick solid rgb(199, 127, 40);
+  background: rgb(253, 161, 49);
+  border-bottom: thick solid rgb(199, 127, 40);
 }
 
 
 
 
 .my_planFeature {
-    text-align: center;
-    font-size: 2em;
+  text-align: center;
+  font-size: 2em;
 }
 
 .my_planFeature i.my_check {
-    color: green;
+  color: green;
+}
+
+/*BOTON VERDE*/
+.btn-verde { 
+  color: #ffffff; 
+  background-color: #64A004; 
+  border-color: #64A004; 
+} 
+ 
+.btn-verde:hover, 
+.btn-verde:focus, 
+.btn-verde:active, 
+.btn-verde.active, 
+.open .dropdown-toggle.btn-verde { 
+  color: #ffffff; 
+  background-color: #548703; 
+  border-color: #64A004; 
+} 
+ 
+.btn-verde:active, 
+.btn-verde.active, 
+.open .dropdown-toggle.btn-verde { 
+  background-image: none; 
+} 
+ 
+.btn-verde.disabled, 
+.btn-verde[disabled], 
+fieldset[disabled] .btn-verde, 
+.btn-verde.disabled:hover, 
+.btn-verde[disabled]:hover, 
+fieldset[disabled] .btn-verde:hover, 
+.btn-verde.disabled:focus, 
+.btn-verde[disabled]:focus, 
+fieldset[disabled] .btn-verde:focus, 
+.btn-verde.disabled:active, 
+.btn-verde[disabled]:active, 
+fieldset[disabled] .btn-verde:active, 
+.btn-verde.disabled.active, 
+.btn-verde[disabled].active, 
+fieldset[disabled] .btn-verde.active { 
+  background-color: #64A004; 
+  border-color: #64A004; 
+} 
+ 
+.btn-verde .badge { 
+  color: #64A004; 
+  background-color: #ffffff; 
+}
+
+/*BOTON MORADO*/
+.btn-morado { 
+  color: #ffffff; 
+  background-color: #A00464; 
+  border-color: #A00464; 
+} 
+ 
+.btn-morado:hover, 
+.btn-morado:focus, 
+.btn-morado:active, 
+.btn-morado.active, 
+.open .dropdown-toggle.btn-morado { 
+  color: #ffffff; 
+  background-color: #870354; 
+  border-color: #A00464; 
+} 
+ 
+.btn-morado:active, 
+.btn-morado.active, 
+.open .dropdown-toggle.btn-morado { 
+  background-image: none; 
+} 
+ 
+.btn-morado.disabled, 
+.btn-morado[disabled], 
+fieldset[disabled] .btn-morado, 
+.btn-morado.disabled:hover, 
+.btn-morado[disabled]:hover, 
+fieldset[disabled] .btn-morado:hover, 
+.btn-morado.disabled:focus, 
+.btn-morado[disabled]:focus, 
+fieldset[disabled] .btn-morado:focus, 
+.btn-morado.disabled:active, 
+.btn-morado[disabled]:active, 
+fieldset[disabled] .btn-morado:active, 
+.btn-morado.disabled.active, 
+.btn-morado[disabled].active, 
+fieldset[disabled] .btn-morado.active { 
+  background-color: #A00464; 
+  border-color: #A00464; 
+} 
+ 
+.btn-morado .badge { 
+  color: #A00464; 
+  background-color: #ffffff; 
+}
+
+/*BOTON AZUL*/
+.btn-azul { 
+  color: #ffffff; 
+  background-color: #0464A0; 
+  border-color: #0464A0; 
+} 
+ 
+.btn-azul:hover, 
+.btn-azul:focus, 
+.btn-azul:active, 
+.btn-azul.active, 
+.open .dropdown-toggle.btn-azul { 
+  color: #ffffff; 
+  background-color: #035487; 
+  border-color: #0464A0; 
+} 
+ 
+.btn-azul:active, 
+.btn-azul.active, 
+.open .dropdown-toggle.btn-azul { 
+  background-image: none; 
+} 
+ 
+.btn-azul.disabled, 
+.btn-azul[disabled], 
+fieldset[disabled] .btn-azul, 
+.btn-azul.disabled:hover, 
+.btn-azul[disabled]:hover, 
+fieldset[disabled] .btn-azul:hover, 
+.btn-azul.disabled:focus, 
+.btn-azul[disabled]:focus, 
+fieldset[disabled] .btn-azul:focus, 
+.btn-azul.disabled:active, 
+.btn-azul[disabled]:active, 
+fieldset[disabled] .btn-azul:active, 
+.btn-azul.disabled.active, 
+.btn-azul[disabled].active, 
+fieldset[disabled] .btn-azul.active { 
+  background-color: #0464A0; 
+  border-color: #0464A0; 
+} 
+ 
+.btn-azul .badge { 
+  color: #0464A0; 
+  background-color: #ffffff; 
 }
