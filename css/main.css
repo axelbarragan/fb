@@ -79,7 +79,16 @@ of those sections to manage the look and feel of the site. */
   background: #eee;
 }
 .img-nosotros {
-  width: 100px;
+  width: 250px;
+}
+.em-2 {
+  font-size: 2em;
+}
+.em-1 {
+  font-size: 1.2em;
+}
+h3.abajo {
+  border-bottom: 2px solid #333;
 }
 
 .servicios {
