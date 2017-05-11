@@ -142,17 +142,6 @@ h3.abajo {
 .ser-box:hover {
   background: none repeat scroll 0 0 #C8C8C8;
 }
-.ser-recom {
-  padding-top: 15px;
-  padding-bottom: 45px;
-  background-color: rgba(100,100,100,0.7);
-}
-.ser-recom .texto {
-  margin-left: 50px;
-  position: relative;
-  top: 2px;
-  font-size: 1.4em;
-}
 i.verde {
   color: #64a004;
 }
@@ -202,8 +191,9 @@ footer {
 }
 footer .f1 {
   background-color: #333;
-  height: 140px;
+  height: auto;
   padding-top: 35px;
+  padding-bottom: 10px;
 }
 footer .f1 .fa {
   color: white;
