@@ -44,6 +44,22 @@ html {
   }
 }
 
+@media(max-width:766px) {
+  .em-2 {
+    font-size: 1.1em !important;
+  }
+  .intro  h1 { 
+    padding-top: 50px !important;
+  }
+  .ser-recom .texto {
+    margin-left: 20px !important;
+    font-size: 1.4em;
+  }
+  .ser-box {
+    padding-top: 20px !important;
+  }
+}
+
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
@@ -80,6 +96,11 @@ of those sections to manage the look and feel of the site. */
 }
 .img-nosotros {
   width: 250px;
+  box-shadow: 0 17px 54px 0 rgba(92, 92, 92, 0.5);
+}
+.img-nosotros:hover {
+  box-shadow: 0 17px 54px 0 rgba(92, 92, 92, 0.7);
+
 }
 .em-2 {
   font-size: 2em;
@@ -110,8 +131,10 @@ h3.abajo {
   background-color: rgba(100,100,100,0.7);
 }
 .ser-recom .texto {
-  text-align: middle;
   margin-left: 50px;
+  position: relative;
+  top: 2px;
+  font-size: 1.4em;
 }
 i.verde {
   color: #64a004;
@@ -202,6 +225,8 @@ footer .f2 p {
 /*NAVBAR-TRANSPARENTE*/
 .navbar-flubox-transparente .navbar-brand {
   color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 1.5em;
 }
 .navbar-flubox-transparente {
   font-size: 16px;
@@ -241,6 +266,7 @@ footer .f2 p {
 /*-----*/
 .navbar-flubox .navbar-brand {
   color: rgba(4, 100, 160, 1);
+  font-size: 1.5em;
 }
 .navbar-flubox {
   font-size: 16px;
@@ -263,18 +289,18 @@ footer .f2 p {
   background-color: rgba(255, 255, 255, 1);
 }
 .navbar-flubox .navbar-toggle {
-  border-color: #ffffff;
+  border-color: #AAA;
 }
 .navbar-flubox .navbar-toggle:hover,
 .navbar-flubox .navbar-toggle:focus {
-  background-color: #ffffff;
+  background-color: rgba(4, 160, 100, 0.5);
 }
 .navbar-flubox .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+  background-color: #333333;
 }
 .navbar-flubox .navbar-toggle:hover .icon-bar,
 .navbar-flubox .navbar-toggle:focus .icon-bar {
-  background-color: #ffffff;
+  background-color: #333333;
 }
 
 /*CURSOR*/
