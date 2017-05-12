@@ -1,7 +1,7 @@
 var preloader = $('.preloader');
 $(window).on('load', function() {
-	preloader.remove();
-	console.log("SE QUITO");
+	preloader.fadeOut(1000, function(){ $(this).remove();});
+	//console.log("SE QUITO");
 	$(function(){
 		$(".element").typed({
 			strings: ["tu sitio web.", "la identidad corporativa.","la publicidad que necesitas."],
