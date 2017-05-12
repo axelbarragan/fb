@@ -14,13 +14,8 @@ html {
   width: 100%;
   height: 100%;
 }
-.navbar-inner {
-  background:transparent !important;
-}
-.img-logo {
-  width: 70px;
-}
 
+/*TEXTO*/
 .texto-centro {
   text-align: center;
 }
@@ -30,7 +25,9 @@ html {
 .texto-izquierda {
   text-align: left;
 }
+/*---*/
 
+/*MEDIA QUERIES*/
 @media(min-width:767px) {
   .navbar {
     padding: 10px 0;
@@ -76,10 +73,14 @@ html {
     display: block !important;
   }
 }
+/*---*/
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
+/*SECCIONES DE LA PÁGINA*/
+.seccion {
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 .intro {
   height: 100%;
@@ -89,7 +90,6 @@ of those sections to manage the look and feel of the site. */
   background-size: cover;
   background-position: center;
   color: #FFF;
-
 }
 .intro  h1 {
   padding-top: 100px;
@@ -99,12 +99,6 @@ of those sections to manage the look and feel of the site. */
   -webkit-text-fill-color: #FFF;
   -webkit-text-stroke-color: #000;
   -webkit-text-stroke-width: 1.95px;  
-}
-
-.seccion {
-  height: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .nosotros {
@@ -117,7 +111,6 @@ of those sections to manage the look and feel of the site. */
 }
 .img-nosotros:hover {
   box-shadow: 0 17px 54px 0 rgba(92, 92, 92, 0.7);
-
 }
 .em-2 {
   font-size: 2em;
@@ -174,10 +167,9 @@ i.azul {
 .camaras {
   text-align: center;
   background-color: rgba(4,100,160,0.5);
-  
 }
 
-.contact-section {
+.contacto {
   height: auto;
   width: 100%;
   padding-top: 50px;
@@ -185,6 +177,7 @@ i.azul {
   text-align: center;
   background: #eee;
 }
+
 footer {
   width: 100%;  
   color: white;
@@ -206,19 +199,15 @@ footer .f2 p {
   padding-top: 15px;
 }
 
-/* Let's get this party started */
+/* CAMBIO DE SCROLL (Solo webkit) */
 ::-webkit-scrollbar {
   width: 13px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -228,6 +217,7 @@ footer .f2 p {
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255,0,0,0.4); 
 }
+/*---*/
 
 /*NAVBAR-TRANSPARENTE*/
 .navbar-flubox-transparente .navbar-brand {
@@ -269,8 +259,9 @@ footer .f2 p {
 .navbar-flubox-transparente .navbar-toggle:focus .icon-bar {
   background-color: #ffffff;
 }
-
 /*-----*/
+
+/*NAVBAR BLANCO*/
 .navbar-flubox .navbar-brand {
   color: rgba(4, 100, 160, 1);
   font-size: 1.5em;
@@ -309,8 +300,9 @@ footer .f2 p {
 .navbar-flubox .navbar-toggle:focus .icon-bar {
   background-color: #333333;
 }
+/*---*/
 
-/*CURSOR*/
+/*Typer-Cursor*/
 .typed-cursor{
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
@@ -337,16 +329,15 @@ footer .f2 p {
   animation: 0;
   transition: opacity .25s;
 }
+/*---*/
 
-/**/
-.line {
-  border-right: 1px solid #B29999;
-}
-
+/*PADDING DERECHA*/
 .pad-derecha-5 {
   padding-right: 5px; 
 }
+/*---*/
 
+/*PADDING TOP*/
 .pad-top-5 {
   padding-top: 5px;
 }
@@ -356,26 +347,23 @@ footer .f2 p {
 .pad-top-15 {
   padding-top: 15px;
 }
+/*---*/
 
-/**/
+/*TABLA DE PRECIOS*/
 .price_table_container{
   text-align:center;
   color:#666;
   margin-top:35px;
 }
-
 .price_table_heading{
   font-size:36px;
   padding:10px;
   background:#EEE;
 }
-
-
 .price_table_row {
   padding:15px;
   background: #FFF;
 }
-
 .cost{
   padding:30px;
   font-size:30px;
@@ -383,14 +371,12 @@ footer .f2 p {
 .cost span{
   font-size:15px;
 }
-
 .price_table_row:nth-of-type(even) {
   background: #E5E5E5;
 }
 .btn{
   border-radius:0px;
 }
-
 .recommended{
   /*USER DEFINED COLOUR*/ 
   background:#FF3A3A; 
@@ -401,11 +387,7 @@ footer .f2 p {
   text-align:center;
   margin-bottom:-35px;
 }
-
-
 .spacer{width:100%;height:50px;}
-
-
 /*Already Defined Colours*/
 /*Background*/
 .primary-bg{background:#337AB7;color:#FFF;}
@@ -427,80 +409,7 @@ footer .f2 p {
 .royal-text{background:#FFF;color:#8E74E2;}
 .static-text{background:#FFF;color:#2BB0A6;}
 
-/*Additional Button styles*/
-
-/*BTN-DARK*/
-.btn-dark {
-  color: #fff;
-  background-color: #444;
-  border-color: #444;
-}
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark.focus,
-.btn-dark:active,
-.btn-dark.active,
-.open > .dropdown-toggle.btn-dark {
-  color: #fff;
-  background-color: #222;
-  border-color: #222;
-}
-.btn-dark:active,
-.btn-dark.active,
-.open > .dropdown-toggle.btn-dark {
-  background-image: none;
-}
-
-
-/*BTN-ROYAL---------*/
-.btn-royal {
-  color: #fff;
-  background-color: #8E74E2;
-  border-color: #8E74E2;
-}
-.btn-royal:hover,
-.btn-royal:focus,
-.btn-royal.focus,
-.btn-royal:active,
-.btn-royal.active,
-.open > .dropdown-toggle.btn-royal {
-  color: #fff;
-  background-color: #7451E8;
-  border-color: #7451E8;
-}
-.btn-royal:active,
-.btn-royal.active,
-.open > .dropdown-toggle.btn-royal {
-  background-image: none;
-}
-
-
-/*BTN-STATIC---------*/
-.btn-static {
-  color: #fff;
-  background-color: #2BB0A6;
-  border-color: #2BB0A6;
-}
-.btn-static:hover,
-.btn-static:focus,
-.btn-static.focus,
-.btn-static:active,
-.btn-static.active,
-.open > .dropdown-toggle.btn-static {
-  color: #fff;
-  background-color: #07A094;
-  border-color: #07A094;
-}
-.btn-static:active,
-.btn-static.active,
-.open > .dropdown-toggle.btn-static {
-  background-image: none;
-}
-
-
-i.my_check {
-  color: green;
-}
+i.my_check {color: green; }
 
 /*BOTON VERDE*/
 .btn-verde { 
@@ -508,7 +417,6 @@ i.my_check {
   background-color: #64A004; 
   border-color: #64A004; 
 } 
- 
 .btn-verde:hover, 
 .btn-verde:focus, 
 .btn-verde:active, 
@@ -518,13 +426,11 @@ i.my_check {
   background-color: #548703; 
   border-color: #64A004; 
 } 
- 
 .btn-verde:active, 
 .btn-verde.active, 
 .open .dropdown-toggle.btn-verde { 
   background-image: none; 
 } 
- 
 .btn-verde.disabled, 
 .btn-verde[disabled], 
 fieldset[disabled] .btn-verde, 
@@ -543,11 +449,11 @@ fieldset[disabled] .btn-verde.active {
   background-color: #64A004; 
   border-color: #64A004; 
 } 
- 
 .btn-verde .badge { 
   color: #64A004; 
   background-color: #ffffff; 
 }
+/*---*/
 
 /*BOTON MORADO*/
 .btn-morado { 
@@ -555,7 +461,6 @@ fieldset[disabled] .btn-verde.active {
   background-color: #A00464; 
   border-color: #A00464; 
 } 
- 
 .btn-morado:hover, 
 .btn-morado:focus, 
 .btn-morado:active, 
@@ -565,13 +470,11 @@ fieldset[disabled] .btn-verde.active {
   background-color: #870354; 
   border-color: #A00464; 
 } 
- 
 .btn-morado:active, 
 .btn-morado.active, 
 .open .dropdown-toggle.btn-morado { 
   background-image: none; 
 } 
- 
 .btn-morado.disabled, 
 .btn-morado[disabled], 
 fieldset[disabled] .btn-morado, 
@@ -590,11 +493,11 @@ fieldset[disabled] .btn-morado.active {
   background-color: #A00464; 
   border-color: #A00464; 
 } 
- 
 .btn-morado .badge { 
   color: #A00464; 
   background-color: #ffffff; 
 }
+/*---*/
 
 /*BOTON AZUL*/
 .btn-azul { 
@@ -602,7 +505,6 @@ fieldset[disabled] .btn-morado.active {
   background-color: #0464A0; 
   border-color: #0464A0; 
 } 
- 
 .btn-azul:hover, 
 .btn-azul:focus, 
 .btn-azul:active, 
@@ -612,13 +514,11 @@ fieldset[disabled] .btn-morado.active {
   background-color: #035487; 
   border-color: #0464A0; 
 } 
- 
 .btn-azul:active, 
 .btn-azul.active, 
 .open .dropdown-toggle.btn-azul { 
   background-image: none; 
 } 
- 
 .btn-azul.disabled, 
 .btn-azul[disabled], 
 fieldset[disabled] .btn-azul, 
@@ -637,8 +537,8 @@ fieldset[disabled] .btn-azul.active {
   background-color: #0464A0; 
   border-color: #0464A0; 
 } 
- 
 .btn-azul .badge { 
   color: #0464A0; 
   background-color: #ffffff; 
 }
+/*---*/
