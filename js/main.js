@@ -1,4 +1,6 @@
+var preloader = $('.preloader');
 $(document).ready(function() {
+	preloader.remove();
 	$(function(){
 		$(".element").typed({
 			strings: ["tu sitio web.", "la identidad corporativa.","la publicidad que necesitas."],
