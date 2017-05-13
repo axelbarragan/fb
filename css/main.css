@@ -38,6 +38,10 @@ html {
   display: inline-block;
 }
 
+.img-shadow {
+  box-shadow: 0 17px 54px 0 rgba(92, 92, 92, 0.5);
+}
+
 /*TEXTO*/
 .texto-centro {
   text-align: center;
@@ -69,6 +73,13 @@ html {
   }
 }
 
+@media(max-width:992px) {
+  .titulo-desc {
+    padding-top: .7em !important;
+    padding-bottom: .0em !important;
+  }
+}
+
 @media(max-width:766px) {
   .em-2 {
     font-size: 1.1em !important;
@@ -97,6 +108,11 @@ html {
   }
   .preloader > img {
     left: 35% !important;
+  }
+  .titulo-desc {
+    font-size: 1.2em;
+    padding-bottom: 1.5em;
+    padding-top: 0.9em;
   }
 }
 /*---*/
@@ -139,9 +155,9 @@ html {
   box-shadow: 0 17px 54px 0 rgba(92, 92, 92, 0.7);
 }
 .em-2 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
-.em-1 {
+.em-1_2 {
   font-size: 1.2em;
 }
 h3.abajo {
@@ -184,6 +200,14 @@ i.azul {
 .sitios {
   text-align: center;
   background-color: rgba(100,160,4,0.4);
+}
+.sitios p {
+  font-size: 1.2em;
+}
+.sitios .titulo-desc {
+  font-size: 1.5em;
+  padding-bottom: 1.5em;
+  padding-top: 1.1em;
 }
 .publicidad {
   text-align: center;
@@ -272,14 +296,14 @@ footer .f2 p {
   background-color: rgba(255, 255, 255, 0);
 }
 .navbar-flubox-transparente .navbar-toggle {
-  border-color: #ffffff;
+  border-color: rgba(103, 153, 153, 1);
 }
 .navbar-flubox-transparente .navbar-toggle:hover,
 .navbar-flubox-transparente .navbar-toggle:focus {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .navbar-flubox-transparente .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
 }
 .navbar-flubox-transparente .navbar-toggle:hover .icon-bar,
 .navbar-flubox-transparente .navbar-toggle:focus .icon-bar {
@@ -317,14 +341,14 @@ footer .f2 p {
 }
 .navbar-flubox .navbar-toggle:hover,
 .navbar-flubox .navbar-toggle:focus {
-  background-color: rgba(4, 160, 100, 0.5);
+  background-color: rgba(1, 1, 1, 0.5);
 }
 .navbar-flubox .navbar-toggle .icon-bar {
   background-color: #333333;
 }
 .navbar-flubox .navbar-toggle:hover .icon-bar,
 .navbar-flubox .navbar-toggle:focus .icon-bar {
-  background-color: #333333;
+  background-color: #fff;
 }
 /*---*/
 
