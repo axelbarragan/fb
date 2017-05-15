@@ -23,6 +23,7 @@ $(window).on('load', function() {
     $('#quienes-somos').css('opacity', 0);
 		$('.ser-general').css('opacity', 0);
 		$('.mmv').css('opacity', 0);
+		$('.tecnologias').css('opacity', 0);
 
 		$('#quienes-somos').waypoint(function() {
 			$('#quienes-somos').addClass('fadeInUp');
@@ -34,6 +35,10 @@ $(window).on('load', function() {
 
 		$('.mmv').waypoint(function() {
 			$('.mmv').addClass('bounceIn');
+		}, { offset: '70%' });
+
+		$('.tecnologias').waypoint(function() {
+			$('.tecnologias').addClass('bounceIn');
 		}, { offset: '70%' });
 
 	});

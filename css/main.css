@@ -134,13 +134,26 @@ html {
   color: #FFF;
 }
 .intro  h1 {
-  padding-top: 100px;
   font-size: 80px;
   font-family: 'Orbitron', sans-serif;
-  padding-bottom: -10px;
   -webkit-text-fill-color: #FFF;
   -webkit-text-stroke-color: #000;
   -webkit-text-stroke-width: 1.95px;  
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 50px;
+  width: 100%;
+  text-align: center;
+}
+.header-content-inner {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nosotros {
@@ -199,7 +212,7 @@ i.azul {
 
 .sitios {
   text-align: center;
-  background-color: rgba(100,160,4,0.4);
+  
 }
 .sitios p {
   font-size: 1.2em;
@@ -212,11 +225,20 @@ i.azul {
 .publicidad {
   text-align: center;
   /*background: #fff;*/
-  background-color: rgba(160,4,100,0.5);
+  
 }
 .camaras {
   text-align: center;
+ 
+}
+.fondo-azul {
   background-color: rgba(4,100,160,0.5);
+}
+.fondo-morado {
+  background-color: rgba(160,4,100,0.5);
+}
+.fondo-verde {
+  background-color: rgba(100,160,4,0.4);
 }
 
 .contacto {
