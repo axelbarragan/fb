@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
+@font-face {
+    font-family: 'quantify';
+    src:
+    url(../fonts/Quantify-Bold.ttf) format('truetype'),
+    url(../fonts/Quantify-Bold.eot) format('embedded-opentype');
+}
 
 body {
   width: 100%;
@@ -51,6 +57,16 @@ html {
 }
 .texto-izquierda {
   text-align: left;
+}
+.texto-quantify {
+  font-family: 'quantify', sans-serif;
+}
+
+.texto-azulfuerte {
+  color: #00699c;
+}
+.texto-azulclaro {
+  color: #69b1e3;
 }
 /*---*/
 
@@ -334,9 +350,13 @@ footer .f2 p {
 /*-----*/
 
 /*NAVBAR BLANCO*/
-.navbar-flubox .navbar-brand {
-  color: rgba(4, 100, 160, 1);
-  font-size: 1.5em;
+.navbar-flubox .navbar-brand span.parteuno {
+  color: rgba(0, 105, 156, 1);
+  /*font-size: 1.5em;*/
+}
+.navbar-flubox .navbar-brand span.partedos {
+  color: rgba(105, 177, 227, 1);
+  /*font-size: 1.5em;*/
 }
 .navbar-flubox {
   font-size: 16px;
@@ -614,3 +634,6 @@ fieldset[disabled] .btn-azul.active {
   background-color: #ffffff; 
 }
 /*---*/
+.inp-error {
+  color: red;
+}
