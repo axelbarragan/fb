@@ -174,7 +174,7 @@ html {
 
 .nosotros {
   text-align: center;
-  background: #eee;
+  background: #F8F9FA;
 }
 .img-nosotros {
   width: 250px;
@@ -256,6 +256,12 @@ i.azul {
 .fondo-verde {
   background-color: rgba(100,160,4,0.4);
 }
+.fondo-gris {
+  background-color: #7879FA;
+}
+.fondo-blanco {
+  background-color: #fff;
+}
 
 .contacto {
   height: auto;
@@ -267,14 +273,15 @@ i.azul {
 }
 
 footer {
-  width: 100%;  
+  width: 100%;
+  height: 0 auto;  
   color: white;
 }
 footer .f1 {
   background-color: #333;
-  height: auto;
+  height: 0 auto;
   padding-top: 35px;
-  padding-bottom: 10px;
+  padding-bottom: 35px;
 }
 footer .f1 .fa {
   color: white;

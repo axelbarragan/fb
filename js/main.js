@@ -44,38 +44,36 @@ $(window).on('load', function() {
 			},
 			submitHandler: function (form) {
 				var dataString = $(form).serialize();
-      //alert(dataString);
-      $.ajax({
-      	type: "POST",
-      	url: "php/newContacto.php",
-      	data: dataString,
-      	beforeSend: function() {
-      		alert("Enviando"+dataString);
-      		$('.inpu').prop('disabled', true);
-      	},
-      	success: function(data) {
-      		console.log(data);
-          //alert("Recibiendo");
-          $('.inpu').prop('disabled', false);
-          var json=JSON.parse(data);
-          if(json.respuesta=='bien') {
-          	$('.inpu').val('');
-          	swal({ 
-          		title: json.res, 
-          		text: "Gracias por tu mensaje.", 
-          		type: "success"
-          	});
-          } else {
-          	console.log("Error: "+json.error+" | Data: "+data);
-          }
-        },
-        error: function (xhr, ajaxOptions, thrownError) {
-        	alert(xhr.status);
-        	alert(thrownError);
-        }
-      });
-    }
-  });
+				$.ajax({
+					type: "POST",
+					url: "php/newContacto.php",
+					data: dataString,
+					beforeSend: function() {
+						alert("Enviando"+dataString);
+						$('.inpu').prop('disabled', true);
+					},
+					success: function(data) {
+						console.log(data);
+						$('.inpu').prop('disabled', false);
+						var json=JSON.parse(data);
+						if(json.respuesta=='bien') {
+							$('.inpu').val('');
+							swal({ 
+								title: json.res, 
+								text: "Gracias por tu mensaje.", 
+								type: "success"
+							});
+						} else {
+							console.log("Error: "+json.error+" | Data: "+data);
+						}
+					},
+					error: function (xhr, ajaxOptions, thrownError) {
+						alert(xhr.status);
+						alert(thrownError);
+					}
+				});
+			}
+		});
 
 
 		$('.nav a').click(function(){
