@@ -61,6 +61,9 @@ html {
 .texto-quantify {
   font-family: 'quantify', sans-serif;
 }
+.texto-italica {
+  font-style: italic;
+}
 
 .texto-azulfuerte {
   color: #00699c;
@@ -445,6 +448,11 @@ footer .f2 p {
 }
 .pad-top-15 {
   padding-top: 15px;
+}
+
+/*PADDING BOTTOM*/
+.pad-bot-5 {
+  padding-bottom: 5px;
 }
 /*---*/
 
