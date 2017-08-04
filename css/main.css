@@ -133,6 +133,7 @@ html {
     padding-bottom: 1.5em;
     padding-top: 0.9em;
   }
+
 }
 /*---*/
 
@@ -143,11 +144,21 @@ html {
   padding-bottom: 50px;
 }
 
+.cuentanos {
+  height: 40%;
+  padding-top: 150px;
+  text-align: center;
+  background-image: url('../assets/img/imag-01.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+}
+
 .intro {
   height: 100%;
   padding-top: 150px;
   text-align: center;
-  background-image: url('../assets/img/cover.jpg');
+  background-image: url('../assets/img/imag2-01.jpg');
   background-size: cover;
   background-position: center;
   color: #FFF;
@@ -236,6 +247,9 @@ i.azul {
 .sitios p {
   font-size: 1.2em;
 }
+.sitios li {
+  font-size: 1.2em;
+}
 .sitios .titulo-desc {
   font-size: 1.5em;
   padding-bottom: 1.5em;
@@ -251,10 +265,10 @@ i.azul {
  
 }
 .fondo-azul {
-  background-color: rgba(4,100,160,0.5);
+  background-color: rgba(4,100,160,1);
 }
 .fondo-morado {
-  background-color: rgba(160,4,100,0.5);
+  background-color: rgba(94,94,94,0.9);
 }
 .fondo-verde {
   background-color: rgba(100,160,4,0.4);
@@ -264,6 +278,10 @@ i.azul {
 }
 .fondo-blanco {
   background-color: #fff;
+}
+
+.texto-blanco {
+  color: #fff !important;
 }
 
 .contacto {
@@ -448,6 +466,9 @@ footer .f2 p {
 }
 .pad-top-15 {
   padding-top: 15px;
+}
+.pad-top-30 {
+  padding-top: 30px;
 }
 
 /*PADDING BOTTOM*/
