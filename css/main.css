@@ -140,13 +140,13 @@ html {
 /*SECCIONES DE LA PÁGINA*/
 .seccion {
   height: auto;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   padding-bottom: 50px;
 }
 
 .cuentanos {
-  height: 40%;
-  padding-top: 150px;
+  height: 50%;
+  /*padding-top: 100px;*/
   text-align: center;
   background-image: url('../assets/img/imag-01.jpg');
   background-size: cover;
