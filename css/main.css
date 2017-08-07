@@ -21,6 +21,13 @@ html {
   height: 100%;
 }
 
+.link-flubox {
+  color: #00669b !important;
+}
+.link-flubox:hover {
+  color: #337ab7 !important;
+}
+
 .preloader {
   position: fixed;
   top: 0;
@@ -145,10 +152,49 @@ html {
 }
 
 .cuentanos {
+  padding-top: 50px;
+  text-align: center;
+  background-image: url('../assets/img/imag3-01.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+}
+
+.titulo-servicio-web {
   height: 50%;
-  /*padding-top: 100px;*/
+  padding-top: 50px;
   text-align: center;
   background-image: url('../assets/img/imag-01.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+}
+
+.titulo-servicio-diseño {
+  height: 50%;
+  padding-top: 50px;
+  text-align: center;
+  background-image: url('../assets/img/imag2-01.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+}
+
+.titulo-servicio-publicidad {
+  height: 50%;
+  padding-top: 50px;
+  text-align: center;
+  background-image: url('../assets/img/imag4.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+}
+
+.titulo-servicio-cctv {
+  height: 50%;
+  padding-top: 50px;
+  text-align: center;
+  background-image: url('../assets/img/6308-01.jpg');
   background-size: cover;
   background-position: center;
   color: #FFF;
