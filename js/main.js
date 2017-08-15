@@ -1,6 +1,8 @@
 var preloader = $('.preloader');
+$("body").addClass("no_scroll");
 $(window).on('load', function() {
 	preloader.fadeOut(1000, function(){ $(this).remove();});
+	$("body").removeClass("no_scroll");
 	//console.log("SE QUITO");
 	$(function(){
 		$(".element").typed({
