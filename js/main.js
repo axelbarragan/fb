@@ -3,7 +3,6 @@ $("body").addClass("no_scroll");
 $(window).on('load', function() {
 	preloader.fadeOut(1000, function(){ $(this).remove();});
 	$("body").removeClass("no_scroll");
-	//console.log("SE QUITO");
 	$(function(){
 		$(".element").typed({
 			strings: ["tu sitio web.", "tu identidad corporativa.","la publicidad que necesitas."],
@@ -11,23 +10,20 @@ $(window).on('load', function() {
 			typeSpeed: 60,
 			backSpeed: 0,
 		});
-
-		/*Tooltip*/
 		$('.tool').tooltip();
-
 		$.validator.addMethod(
 			"soloLetras",
 			function(value, element) {
 				return value.match(/^[a-zA-Z_áéíóúñ\s]*$/);
 			},"Sólo están permitidas letras",
-			);
+		);
 
 		$.validator.addMethod(
 			"soloNumeros",
 			function(value, element) {
 				return value.match(/^[0-9\s]*$/);
 			},"Sólo están permitidas letras",
-			);
+		);
 
 		$('#frmContacto').validate({
 			errorElement: 'div',
@@ -77,12 +73,10 @@ $(window).on('load', function() {
 			}
 		});
 
-
 		$('.nav a').click(function(){
 			$('.navbar-ex1-collapse').collapse('hide');
 		});
 
-		/*Waypoint*/
 		$('#quienes-somos').css('opacity', 0);
 		$('.ser-general').css('opacity', 0);
 		$('.mmv').css('opacity', 0);
@@ -103,10 +97,5 @@ $(window).on('load', function() {
 		$('.tecnologias').waypoint(function() {
 			$('.tecnologias').addClass('bounceIn');
 		}, { offset: '70%' });
-
-
-		
-
 	});
 });
-
