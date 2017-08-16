@@ -428,6 +428,9 @@ footer .f2 p {
 /*-----*/
 
 /*NAVBAR BLANCO*/
+.navbar-flubox .navbar-brand {
+  margin-top: 10px;
+}
 .navbar-flubox .navbar-brand span.parteuno {
   color: rgba(0, 105, 156, 1);
   /*font-size: 1.5em;*/
