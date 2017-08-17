@@ -8,8 +8,6 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").removeClass("navbar-flubox");
     }
 });
-
-//jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
