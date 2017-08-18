@@ -739,3 +739,8 @@ fieldset[disabled] .btn-azul.active {
 .relativo {
   position: relative;
 }
+
+/*EM*/
+.tamaño1-2 {
+  font-size: 1.2em;
+}
