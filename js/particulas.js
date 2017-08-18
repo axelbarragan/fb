@@ -25,7 +25,7 @@ particlesJS('particles-js', {
     line_linked: {
       enable_auto: true,
       distance: 100,
-      color: '#fff',
+      color: '#333',
       opacity: 1,
       width: 1,
       condensed_mode: {
@@ -50,11 +50,6 @@ particlesJS('particles-js', {
       opacity: .5
     },
     events: {
-      onclick: {
-        enable: true,
-        mode: 'push', // "push" or "remove"
-        nb: 4
-      },
       onresize: {
         enable: true,
         mode: 'out', // "out" or "bounce"
