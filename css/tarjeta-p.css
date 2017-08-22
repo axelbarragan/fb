@@ -1,19 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
-body {
-	background: #f0f2f1;
-	font-family: 'Open Sans', sans-serif;
-}
-
-a {
-	text-decoration: none;
-}
 
 .contenedor {
 	max-width: 1200px;
@@ -28,9 +13,6 @@ a {
 	margin: 20px;
 }
 
-.contenedor_tarjeta a {
-	display: inline-block;
-}
 
 .contenedor_tarjeta:hover figure {
 	-webkit-transform: perspective(600px) rotateY(180deg);
