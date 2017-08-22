@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f0f2f1;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 1200px;
+	margin:  50px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contenedor_tarjeta {
+	margin: 20px;
+}
+
+.contenedor_tarjeta a {
+	display: inline-block;
+}
+
+.contenedor_tarjeta:hover figure {
+	-webkit-transform: perspective(600px) rotateY(180deg);
+	-ms-transform: perspective(600px) rotateY(180deg);
+	-o-transform: perspective(600px) rotateY(180deg);
+	transform: perspective(600px) rotateY(180deg);
+
+	/*SOMBRA AL DAR LA VUELTA*/
+	-webkit-box-shadow: 5px 7px 30px 2px rgba(0,0,0,0.67);
+	-moz-box-shadow: 5px 7px 30px 2px rgba(0,0,0,0.67);
+	box-shadow: 5px 7px 30px 2px rgba(0,0,0,0.67);
+}
+
+figure {
+	width: 300px;
+	height: 350px;
+	margin: 0;
+	position: relative;
+	transition: all ease .5s;
+	transform-style: preserve-3d;
+	transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	transition: all ease .5s;
+}
+
+figure .frontal {
+	display: block;
+	/*backface-visibility: hidden; */
+}
+
+figure .trasera {
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	color: #fff;
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	overflow: auto;
+}
+
+.contenedor_tarjeta:nth-child(1) figure .trasera {
+	background: rgba(129,117,113,0.91);
+	background: -moz-linear-gradient(top, rgba(129,117,113,0.91) 0%, rgba(23,17,17,0.96) 53%, rgba(23,17,17,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(129,117,113,0.91)), color-stop(53%, rgba(23,17,17,0.96)), color-stop(100%, rgba(23,17,17,1)));
+	background: -webkit-linear-gradient(top, rgba(129,117,113,0.91) 0%, rgba(23,17,17,0.96) 53%, rgba(23,17,17,1) 100%);
+	background: -o-linear-gradient(top, rgba(129,117,113,0.91) 0%, rgba(23,17,17,0.96) 53%, rgba(23,17,17,1) 100%);
+	background: -ms-linear-gradient(top, rgba(129,117,113,0.91) 0%, rgba(23,17,17,0.96) 53%, rgba(23,17,17,1) 100%);
+	background: linear-gradient(to bottom, rgba(129,117,113,0.91) 0%, rgba(23,17,17,0.96) 53%, rgba(23,17,17,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#817571', endColorstr='#171111', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(2) figure .trasera {
+	background: rgba(16,159,216,0.72);
+	background: -moz-linear-gradient(top, rgba(16,159,216,0.72) 0%, rgba(55,103,165,0.92) 70%, rgba(55,103,165,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(16,159,216,0.72)), color-stop(70%, rgba(55,103,165,0.92)), color-stop(100%, rgba(55,103,165,1)));
+	background: -webkit-linear-gradient(top, rgba(16,159,216,0.72) 0%, rgba(55,103,165,0.92) 70%, rgba(55,103,165,1) 100%);
+	background: -o-linear-gradient(top, rgba(16,159,216,0.72) 0%, rgba(55,103,165,0.92) 70%, rgba(55,103,165,1) 100%);
+	background: -ms-linear-gradient(top, rgba(16,159,216,0.72) 0%, rgba(55,103,165,0.92) 70%, rgba(55,103,165,1) 100%);
+	background: linear-gradient(to bottom, rgba(16,159,216,0.72) 0%, rgba(55,103,165,0.92) 70%, rgba(55,103,165,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#109fd8', endColorstr='#3767a5', GradientType=0 );
+}
+.contenedor_tarjeta:nth-child(3) figure .trasera {
+	background: rgba(243,240,240,0.72);
+	background: -moz-linear-gradient(top, rgba(243,240,240,0.72) 0%, rgba(85,41,129,0.92) 70%, rgba(85,41,129,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243,240,240,0.72)), color-stop(70%, rgba(85,41,129,0.92)), color-stop(100%, rgba(85,41,129,1)));
+	background: -webkit-linear-gradient(top, rgba(243,240,240,0.72) 0%, rgba(85,41,129,0.92) 70%, rgba(85,41,129,1) 100%);
+	background: -o-linear-gradient(top, rgba(243,240,240,0.72) 0%, rgba(85,41,129,0.92) 70%, rgba(85,41,129,1) 100%);
+	background: -ms-linear-gradient(top, rgba(243,240,240,0.72) 0%, rgba(85,41,129,0.92) 70%, rgba(85,41,129,1) 100%);
+	background: linear-gradient(to bottom, rgba(243,240,240,0.72) 0%, rgba(85,41,129,0.92) 70%, rgba(85,41,129,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f0f0', endColorstr='#552981', GradientType=0 );
+}
+
+figure .trasera .titulo {
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+
+}
+figure .trasera hr {
+	height: 2px;
+	background: #fff;
+	border: none;
+	margin-bottom: 20px;
+	opacity: .5;
+}
+
+figure .trasera p {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 22px;
+	font-size: 14px;
+}
+
+
+
