@@ -144,6 +144,9 @@ html {
     padding-bottom: 1.5em;
     padding-top: 0.9em;
   }
+  .navbar-brand {
+    margin-top: 10px;
+  }
 
 }
 /*---*/
