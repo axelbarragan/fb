@@ -147,6 +147,12 @@ html {
   .navbar-brand {
     margin-top: 10px;
   }
+  .texto-contratar {
+    font-size: 1em;
+  }
+  .texto-creamos {
+    font-size: 1.1em;
+  }
 
 }
 /*---*/
