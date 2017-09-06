@@ -1,0 +1,13 @@
+{
+    "settings": {
+        "Minify": {
+            "open_file": false,
+            "auto_minify_on_save": true,
+            "allowed_file_types": [
+                "css",
+                "js",
+                "svg"
+            ]
+        }
+    }
+}

@@ -47,11 +47,11 @@ $(window).on('load', function() {
 					url: "php/newContacto.php",
 					data: dataString,
 					beforeSend: function() {
-						alert("Enviando"+dataString);
+						//alert("Enviando"+dataString);
 						$('.inpu').prop('disabled', true);
 					},
 					success: function(data) {
-						console.log(data);
+						//console.log(data);
 						$('.inpu').prop('disabled', false);
 						var json=JSON.parse(data);
 						if(json.respuesta=='bien') {
@@ -65,10 +65,6 @@ $(window).on('load', function() {
 							console.log("Error: "+json.error+" | Data: "+data);
 						}
 					},
-					error: function (xhr, ajaxOptions, thrownError) {
-						alert(xhr.status);
-						alert(thrownError);
-					}
 				});
 			}
 		});
