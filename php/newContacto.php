@@ -5,6 +5,9 @@ Archivo de contacto para enviar datos mediante correo
 
 include_once('../config/config.php');
 require('PHPMailer-master/PHPMailerAutoload.php');
+include_once('funciones.php');
+
+$ipWeb = obtenerIP();
 
 $datos = array();
 foreach ($_POST as $clave=>$valor) {
@@ -39,7 +42,8 @@ $mail->Body    = 'Se ha recibido un nuevo mensaje de contacto de la página<br>
 <b>Nombre:</b> '.$datos[0].'<br>
 <b>Correo:</b> '.$datos[1].'<br>
 <b>Asunto:</b> '.$datos[2].'<br>
-<b>Mensaje:</b> '.$datos[3].'<br>';
+<b>Mensaje:</b> '.$datos[3].'<br>
+<b>IP</b> '.$ipWeb.'<br>';
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {
