@@ -27,10 +27,8 @@ switch ($estado) {
 
 	$captcha = $datos[4];
 	$secret = KEYSECRET;
-	$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
-	$arr = json_decode($response, TRUE);
-	if(!$arr['success'])
-	{
+	$data = url_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha&remoteip=$ipWeb");
+	if(!$data) {
 		$respuesta = array("respuesta" => 'mal', "res" => 'NO SE PUDO VERIFICAR EL RECAPTCHA');
 		echo json_encode($respuesta);
 		break;
