@@ -7,52 +7,73 @@ include_once('../config/config.php');
 require('PHPMailer-master/PHPMailerAutoload.php');
 include_once('funciones.php');
 
-$ipWeb = obtenerIP();
+$estado = 1;
 
-$datos = array();
-foreach ($_POST as $clave=>$valor) {
-	$datos[] = $valor;
+switch ($estado) {
+	case '0':
+	$datos = array();
+	foreach ($_POST as $clave=>$valor) {
+		$datos[] = $valor;
+	}
+
+	break;
+	
+	case '1':
+	$ipWeb = obtenerIP();
+	$datos = array();
+	foreach ($_POST as $clave=>$valor) {
+		$datos[] = $valor;
+	}
+
+	$captcha = $datos[4];
+	$secret = KEYSECRET;
+	$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
+	$arr = json_decode($response, TRUE);
+	if(!$arr['success'])
+	{
+		$respuesta = array("respuesta" => 'mal', "res" => 'NO SE PUDO VERIFICAR EL RECAPTCHA');
+		echo json_encode($respuesta);
+		break;
+	} else {
+		$mail = new PHPMailer;
+    //$mail->SMTPDebug = 3;                               // Enable verbose debug output
+    $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->Host = 'hv20svg057.neubox.net';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    $mail->Username = 'contacto@flubox.com.mx';                 // SMTP username
+    $mail->Password = 'awelpo128@';                           // SMTP password
+    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->Port = 465;                                    // TCP port to connect to
+    $mail->setFrom(CORREO_CONTACTO, 'Flubox');
+    $mail->addAddress(CORREO_CONTACTO, 'Flubox');     // Add a recipient
+    //$mail->addAddress('ellen@example.com');               // Name is optional
+    //$mail->addReplyTo('info@example.com', 'Information');
+    //$mail->addCC('cc@example.com');
+    //$mail->addBCC('bcc@example.com');
+    //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = TITULO_CORREO_CONTACTO;
+    $mail->Body    = 'Se ha recibido un nuevo mensaje de contacto de la página<br>
+    <b>Nombre:</b> '.$datos[0].'<br>
+    <b>Correo:</b> '.$datos[1].'<br>
+    <b>Asunto:</b> '.$datos[2].'<br>
+    <b>Mensaje:</b> '.$datos[3].'<br>
+    <b>IP</b> '.$ipWeb.'<br>';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    if(!$mail->send()) {
+    	$respuesta = array("respuesta" => 'mal', "res" => 'Envio de correo no posible: '.$mail->ErrorInfo);
+    	echo json_encode($respuesta);
+    } else {
+    	$respuesta = array("respuesta" => 'bien', "res" => 'Mensaje enviado!');
+    	echo json_encode($respuesta);
+    }
+  }
+  break;
 }
 
-$mail = new PHPMailer;
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
-
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'hv20svg057.neubox.net';  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'contacto@flubox.com.mx';                 // SMTP username
-$mail->Password = 'awelpo128@';                           // SMTP password
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    // TCP port to connect to
-
-$mail->setFrom(CORREO_CONTACTO, 'Flubox');
-$mail->addAddress(CORREO_CONTACTO, 'Flubox');     // Add a recipient
-//$mail->addAddress('ellen@example.com');               // Name is optional
-//$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
-
-$mail->Subject = TITULO_CORREO_CONTACTO;
-$mail->Body    = 'Se ha recibido un nuevo mensaje de contacto de la página<br>
-<b>Nombre:</b> '.$datos[0].'<br>
-<b>Correo:</b> '.$datos[1].'<br>
-<b>Asunto:</b> '.$datos[2].'<br>
-<b>Mensaje:</b> '.$datos[3].'<br>
-<b>IP</b> '.$ipWeb.'<br>';
-$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-if(!$mail->send()) {
-	$respuesta = array("respuesta" => 'mal', "res" => 'Envio de correo no posible: '.$mail->ErrorInfo);
-	echo json_encode($respuesta);
-} else {
-	$respuesta = array("respuesta" => 'bien', "res" => 'Mensaje enviado!');
-	echo json_encode($respuesta);
-}
 
 /*
 

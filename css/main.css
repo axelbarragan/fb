@@ -753,3 +753,7 @@ fieldset[disabled] .btn-azul.active {
 .tamaño1-2 {
   font-size: 1.2em;
 }
+
+.error-rec {
+  color: red;
+}

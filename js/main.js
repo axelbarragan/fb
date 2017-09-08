@@ -11,20 +11,15 @@ $(window).on('load', function() {
 			backSpeed: 0,
 		});
 		$('.tool').tooltip();
-		$.validator.addMethod(
-			"soloLetras",
+		$.validator.addMethod("soloLetras",
 			function(value, element) {
 				return value.match(/^[a-zA-Z_áéíóúñ\s]*$/);
-			},"Sólo están permitidas letras",
-		);
-
+			});
 		$.validator.addMethod(
 			"soloNumeros",
 			function(value, element) {
 				return value.match(/^[0-9\s]*$/);
-			},"Sólo están permitidas letras",
-		);
-
+			});
 		$('#frmContacto').validate({
 			errorElement: 'div',
 			errorClass: 'inp-error',
@@ -41,31 +36,38 @@ $(window).on('load', function() {
 				inMensaje:  {required: "Llena la información"}
 			},
 			submitHandler: function (form) {
-				var dataString = $(form).serialize();
-				$.ajax({
-					type: "POST",
-					url: "php/newContacto.php",
-					data: dataString,
-					beforeSend: function() {
-						//alert("Enviando"+dataString);
-						$('.inpu').prop('disabled', true);
-					},
-					success: function(data) {
-						//console.log(data);
-						$('.inpu').prop('disabled', false);
-						var json=JSON.parse(data);
-						if(json.respuesta=='bien') {
-							$('.inpu').val('');
-							swal({ 
-								title: json.res, 
-								text: "Gracias por tu mensaje.", 
-								type: "success"
-							});
-						} else {
-							console.log("Error: "+json.error+" | Data: "+data);
-						}
-					},
-				});
+				var response = grecaptcha.getResponse();
+				if(response.length == 0) {
+					console.log("Error en recaptcha");
+					$('.error-rec').html('ACTIVA EL RECAPTCHA');
+				} else {
+					var dataString = $(form).serialize();
+					$.ajax({
+						type: "POST",
+						url: "php/newContacto.php",
+						data: dataString,
+						beforeSend: function() {
+							$('.inpu').prop('disabled', true);
+						},
+						success: function(data) {
+							console.log(data);
+							$('.inpu').prop('disabled', false);
+							var json=JSON.parse(data);
+							if(json.respuesta=='bien') {
+								$('.inpu').val('');
+								$('.error-rec').remove();
+								grecaptcha.reset();
+								swal({ 
+									title: json.res, 
+									text: "Gracias por tu mensaje.", 
+									type: "success"
+								});
+							} else {
+								console.log("Error: "+json.error+" | Data: "+data);
+							}
+						},
+					});
+				}
 			}
 		});
 
