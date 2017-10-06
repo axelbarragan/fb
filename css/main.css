@@ -145,6 +145,7 @@ html {
   }
   .navbar-brand {
     margin-top: 10px;
+    padding-left: 30px;
   }
   .texto-contratar {
     font-size: 1em;
@@ -424,6 +425,7 @@ footer .f2 p {
 }
 .navbar-flubox .navbar-toggle {
   border-color: #AAA;
+  margin-top: 13px !important;
 }
 .navbar-flubox .navbar-toggle:hover,
 .navbar-flubox .navbar-toggle:focus {
