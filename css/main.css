@@ -12,7 +12,6 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: #eee;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -173,44 +172,9 @@ html {
   color: #FFF;
 }
 
-.titulo-servicio-web {
+.titulo-servicio {
   height: 50%;
   padding-top: 50px;
-  text-align: center;
-  background-image: url('../assets/img/imag-01.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #FFF;
-}
-
-.titulo-servicio-diseño {
-  height: 50%;
-  padding-top: 50px;
-  text-align: center;
-  background-image: url('../assets/img/imag2-01.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #FFF;
-}
-
-.titulo-servicio-publicidad {
-  height: 50%;
-  padding-top: 50px;
-  text-align: center;
-  background-image: url('../assets/img/imag4.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #FFF;
-}
-
-.titulo-servicio-cctv {
-  height: 50%;
-  padding-top: 50px;
-  text-align: center;
-  background-image: url('../assets/img/6308-01.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #FFF;
 }
 
 .intro {
@@ -245,10 +209,6 @@ html {
   margin-right: auto;
 }
 
-.nosotros {
-  text-align: center;
-  background: #F8F9FA;
-}
 .img-nosotros {
   width: 250px;
   box-shadow: 0 17px 54px 0 rgba(92, 92, 92, 0.5);
@@ -314,15 +274,8 @@ i.azul {
   padding-bottom: 1.5em;
   padding-top: 1.1em;
 }
-.publicidad {
-  text-align: center;
-  /*background: #fff;*/
-  
-}
-.camaras {
-  text-align: center;
- 
-}
+
+
 .fondo-azul {
   background-color: rgba(4,100,160,1);
 }
@@ -333,7 +286,7 @@ i.azul {
   background-color: rgba(100,160,4,0.4);
 }
 .fondo-gris {
-  background-color: #7879FA;
+  background-color: #f6f6f6
 }
 .fondo-blanco {
   background-color: #fff;
@@ -437,7 +390,7 @@ footer .f2 p {
 
 /*NAVBAR BLANCO*/
 .navbar-flubox .navbar-brand {
-  margin-top: 10px;
+  margin-top: 12px !important;
 }
 .navbar-flubox .navbar-brand span.parteuno {
   color: rgba(0, 105, 156, 1);
@@ -450,7 +403,8 @@ footer .f2 p {
 .navbar-flubox {
   font-size: 16px;
   background-color: rgba(255, 255, 255, 1);
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #ddd;
 }
 .navbar-flubox .navbar-nav>li>a {
   color: rgba(125, 125, 125, 1);
@@ -464,7 +418,8 @@ footer .f2 p {
 .navbar-flubox .navbar-nav>.active>a,
 .navbar-flubox .navbar-nav>.active>a:hover,
 .navbar-flubox .navbar-nav>.active>a:focus {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(4, 100, 160, 1);
+  font-weight: bold;
   background-color: rgba(255, 255, 255, 1);
 }
 .navbar-flubox .navbar-toggle {
@@ -480,6 +435,9 @@ footer .f2 p {
 .navbar-flubox .navbar-toggle:hover .icon-bar,
 .navbar-flubox .navbar-toggle:focus .icon-bar {
   background-color: #fff;
+}
+.navbar-flubox .navbar-right {
+  margin: 8px;
 }
 /*---*/
 
@@ -756,4 +714,41 @@ fieldset[disabled] .btn-azul.active {
 
 .error-rec {
   color: red;
+}
+
+
+.barrita:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: rgba(105,177,227,1);
+  margin: 10px auto 0;
+}
+
+.barrita-servicio-azul:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #0464a0;
+  margin: 10px auto 0;
+}
+
+.barrita-servicio-morado:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #a00464;
+  margin: 10px auto 0;
+}
+
+.barrita-servicio-verde:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #64a004;
+  margin: 10px auto 0;
 }
