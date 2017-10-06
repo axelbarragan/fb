@@ -418,7 +418,7 @@ footer .f2 p {
 .navbar-flubox .navbar-nav>.active>a,
 .navbar-flubox .navbar-nav>.active>a:hover,
 .navbar-flubox .navbar-nav>.active>a:focus {
-  color: rgba(4, 100, 160, 1);
+  color: rgba(4, 100, 160, 0.7);
   font-weight: bold;
   background-color: rgba(255, 255, 255, 1);
 }
